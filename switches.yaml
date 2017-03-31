@@ -1,0 +1,16 @@
+# Switch
+- platform: tplink
+  host: !secret swag_pad_ip
+  name: Swag Pad
+- platform: tplink
+  host: !secret my_room_ip
+  name: My Room
+- platform: tplink
+  host: !secret living_room_1_ip
+  name: Living Room 1
+- platform: tplink
+  host: !secret dining_room_ip
+  name: Dining Room
+- platform: tplink
+  host: !secret candle_warmer_ip
+  name: Candle Warmer

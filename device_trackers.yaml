@@ -1,0 +1,6 @@
+- platform: nmap_tracker
+  hosts: !secret nmap_ips
+  track_new_devices: no
+  consider_home: 1200
+  home_interval: 15
+- platform: locative

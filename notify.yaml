@@ -1,0 +1,3 @@
+- name: facebook
+  platform: facebook
+  page_access_token: !secret fb_access_token

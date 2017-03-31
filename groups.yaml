@@ -1,0 +1,62 @@
+weather:
+  name: Weather
+  view: no
+  entities:
+    - sensor.dark_sky_icon
+    - sun.sun
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_cloud_coverage
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_precip_intensity
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_wind_speed
+
+media:
+  name: Media
+  view: no
+  entities:
+    - media_player.bedroom_home
+    - media_player.living_room_tv
+
+lights:
+  name: Lights
+  view: no
+  entities:
+    - switch.living_room_1
+    - light.living_room_2
+    - switch.my_room
+    - switch.swag_pad
+    - switch.dining_room
+living_room:
+  name: Living Room Lights
+  view: no
+  entities:
+    - switch.living_room_1
+    - light.living_room_2
+
+appliances:
+  name: Appliances
+  view: no
+  entities:
+    - switch.candle_warmer
+
+speed:
+  name: Network
+  view: no
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.cpu_speed
+
+navigation:
+  name: Navigation
+  view: no
+  entities:
+    - sensor.time_to_school
+    - sensor.time_to_work_adam
+    - sensor.time_to_work_ryan

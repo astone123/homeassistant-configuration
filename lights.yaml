@@ -1,0 +1,3 @@
+# Lights
+  - platform: lifx
+    broadcast: !secret living_room_2_ip

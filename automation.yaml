@@ -1,0 +1,21 @@
+- alias: Turn on lights when I get home
+  hide_entity: True
+  trigger:
+    platform: zone
+    entity_id: device_tracker.adam_adam
+    zone: zone.home
+    event: enter
+  action:
+    service: switch.turn_on
+    entity_id: switch.my_room
+
+- alias: Turn off lights when I leave
+  hide_entity: True
+  trigger:
+    platform: zone
+    entity_id: device_tracker.adam_adam
+    zone: zone.home
+    event: leave
+  action:
+    service: switch.turn_off
+    entity_id: switch.my_room

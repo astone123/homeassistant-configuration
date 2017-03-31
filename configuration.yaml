@@ -1,0 +1,56 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_long
+  elevation: 138
+  unit_system: imperial
+  time_zone: America/New_York
+
+  customize: !include customize.yaml
+
+frontend:
+config:
+
+recorder:
+  purge_days: 30
+  db_url: !secret db_url
+
+group: !include groups.yaml
+
+http:
+  api_password: !secret http_password
+  ip_ban_enabled: True
+  login_attempts_threshold: 4
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+
+emulated_hue:
+  type: alexa
+  host_ip: !secret pi_ip
+  listen_port: !secret hue_port
+  expose_by_default: true
+
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+light: !include lights.yaml
+media_player: !include media_players.yaml
+device_tracker: !include device_trackers.yaml
+automation: !include automation.yaml
+notify: !include notify.yaml
+
+ifttt:
+  key: !secret ifttt_api_key
+
+mqtt:
+  broker: !secret pi_ip
+  port: !secret mqtt_port
+  keepalive: 60
+  username: !secret mqtt_username
+  password: !secret adam_mqtt_password

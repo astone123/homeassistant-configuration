@@ -1,0 +1,24 @@
+switch.living_room_1:
+  icon: mdi:lightbulb
+switch.my_room:
+  icon: mdi:lightbulb
+switch.swag_pad:
+  icon: mdi:lightbulb
+switch.dining_room:
+  icon: mdi:lightbulb
+switch.candle_warmer:
+  icon: mdi:candle
+sensor.speedtest_ping:
+  icon: mdi:speedometer
+sensor.speedtest_download:
+  icon: mdi:speedometer
+sensor.speedtest_upload:
+  icon: mdi:speedometer
+sensor.time_to_work_adam:
+  icon: mdi:car
+sensor.time_to_school:
+  icon: mdi:car
+sensor.time_to_work_ryan:
+  icon: mdi:car
+sensor.cpu_speed:
+  icon: mdi:pulse

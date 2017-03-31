@@ -1,0 +1,42 @@
+- platform: darksky
+  api_key: !secret dark_sky_api_key
+  monitored_conditions:
+    - icon
+    - precip_intensity
+    - precip_probability
+    - temperature
+    - apparent_temperature
+    - wind_speed
+    - cloud_cover
+    - humidity
+    - temperature_max
+    - pressure
+
+- platform: xbox_live
+  api_key: !secret xbox_api_key
+  xuid:
+    - !secret xbox_user_id
+- platform: speedtest
+  minute:
+    - 0
+    - 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+- platform: google_travel_time
+  name: !secret time_to_school
+  api_key: !secret google_maps_api_key
+  origin: !secret home_address
+  destination: !secret school_address
+- platform: google_travel_time
+  name: !secret time_to_work_adam
+  api_key: !secret google_maps_api_key
+  origin: !secret home_address
+  destination: !secret adam_work
+- platform: google_travel_time
+  name: !secret time_to_work_ryan
+  api_key: !secret google_maps_api_key
+  origin: !secret home_address
+  destination: !secret ryan_work
+- platform: cpuspeed
